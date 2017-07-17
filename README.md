@@ -11,7 +11,7 @@ grandiose idea and consolidate it into more managable pieces.
 
 ## Prerequisites
 
--   [full-stack-project-practice](https://github.com/ga-wdi-boston/full-stack-project-practice)
+-   [full-stack-project-practice](https://git.generalassemb.ly/ga-wdi-boston/full-stack-project-practice)
 
 ## Objectives
 
@@ -25,7 +25,7 @@ By the end of this, developers should be able to:
 ## Preparation
 
 1.  Fork and clone this repository.
- [FAQ](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
+ [FAQ](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
 
 ## What is `scope`? Why is it important?
 
@@ -41,7 +41,7 @@ books that belong to an author, right!? What happens if an author has multiple
 books, but some books have multiple authors!? We also probably need to have
 *users* so that they can take out books, and users need to have passwords, and
 need to be able to change their passwords, and what if we have multiple books,
-can multiple users take out different versions of the same boo--[ohh no I've gone crosseyed](http://i.imgur.com/a7Yyjg8.gif).
+can multiple users take out different versions of the same boo--[ohh no I've gone crosseyed](https://i.imgur.com/a7Yyjg8.gif).
 
 Let's back it up, and take it one step at a time. Books. Books is our *main*
 resource. So let's start there. The scope of my project would likely just start
@@ -50,7 +50,7 @@ additional resource. How about authors?
 
 It's OK for you ERD to change!
 
-If I were building this out, I would start with just Book. ![Book](http://i.imgur.com/N1npKUD.png)
+If I were building this out, I would start with just Book. ![Book](https://i.imgur.com/N1npKUD.png)
 
 Once I had CRUD working on book (using curl and perhaps a dummy client), I
 would move on to add authors.
@@ -59,7 +59,7 @@ To add authors I would make sure that books belonged to authors and that there
 were no two authors the same, and add author's birthdays, and home town, and
 favorite food, and--STOP! Add authors. That's IT.
 
-![Author](http://i.imgur.com/lTnGitd.png)
+![Author](https://i.imgur.com/lTnGitd.png)
 
 That wasn't so hard, no was it? Test CRUD on authors! Now what do we need to
 do? Well, we need to form some sort of relationship between authors and books.
@@ -67,7 +67,7 @@ Right, and we know that authors can have many books... but wait--can't books
 have many authors!? Yep! But we aren't going to worry about that right now!
 See how liberating this can be?! Let's get it working, THEN we'll change it.
 
-![Relationship](http://i.imgur.com/vfWHyT6.png)
+![Relationship](https://i.imgur.com/vfWHyT6.png)
 
 Test the relationship. Make sure you can get all books that belong to an
 author, and that you can find an author that owns a book!
@@ -76,7 +76,7 @@ What's next? While we wanted to add a many-to-many relationship between authors
 and books, it's not as important as allowing users to interact with books. So,
 let's add our *User* model.
 
-![User](http://i.imgur.com/sYjRXbz.png)
+![User](https://i.imgur.com/sYjRXbz.png)
 
 Boom. Now we have users. Let's test CRUD and pause for a second for some
 `testing best practices`!
@@ -103,9 +103,9 @@ relationship further down the road? OR b) build out your API methodically,
 making sure everything is working before jumping in the deep end? If you picked
 a) you're likely setting yourself up for headache.
 
-a) ![a](http://i.imgur.com/4CPYxty.png)
+a) ![a](https://i.imgur.com/4CPYxty.png)
 
-b) ![b](http://i.imgur.com/XshAB3u.png)
+b) ![b](https://i.imgur.com/XshAB3u.png)
 
 Start with b. Once it's working properly, add the `Loan` resource, and create
 the join table.
@@ -127,7 +127,7 @@ priviliges would I allow? How would I control user AND admin ownership?
 
 ## Lab: Pitch Time!
 
-You all should've completed the [full-stack-project-practice](https://github.com/ga-wdi-boston/full-stack-project-practice) at this point. We'll go around the room, and have people present,
+You all should've completed the [full-stack-project-practice](https://git.generalassemb.ly/ga-wdi-boston/full-stack-project-practice) at this point. We'll go around the room, and have people present,
 or share their ideas and we'll descope and prioritize them together. Once we're
 done, think about how YOUR project might be descoped, and what the priorities
 are. Set yourself up for success! If you're unclear by the end of all of this,
