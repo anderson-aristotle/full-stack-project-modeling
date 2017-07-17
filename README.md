@@ -11,7 +11,7 @@ grandiose idea and consolidate it into more managable pieces.
 
 ## Prerequisites
 
--   [full-stack-project-practice](https://github.com/ga-wdi-boston/full-stack-project-practice)
+-   [full-stack-project-practice](https://git.generalassemb.ly/ga-wdi-boston/full-stack-project-practice)
 
 ## Objectives
 
@@ -25,7 +25,7 @@ By the end of this, developers should be able to:
 ## Preparation
 
 1.  Fork and clone this repository.
- [FAQ](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
+ [FAQ](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
 
 ## What is `scope`? Why is it important?
 
@@ -127,7 +127,7 @@ priviliges would I allow? How would I control user AND admin ownership?
 
 ## Lab: Pitch Time!
 
-You all should've completed the [full-stack-project-practice](https://github.com/ga-wdi-boston/full-stack-project-practice) at this point. We'll go around the room, and have people present,
+You all should've completed the [full-stack-project-practice](https://git.generalassemb.ly/ga-wdi-boston/full-stack-project-practice) at this point. We'll go around the room, and have people present,
 or share their ideas and we'll descope and prioritize them together. Once we're
 done, think about how YOUR project might be descoped, and what the priorities
 are. Set yourself up for success! If you're unclear by the end of all of this,
