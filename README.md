@@ -26,12 +26,23 @@ By the end of this, developers should be able to:
 
 1.  Fork and clone this repository.
  [FAQ](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
+1.  Create a new branch, `training`, for your work.
+1.  Checkout to the `training` branch.
 
 ## What is `scope`? Why is it important?
 
 Scope is typically a list of features or goals you have in mind for your
-project for example, if I wanted to have users be able to sign up, log in,
-change password, etc. those are all features I would like my application to have. They are *within* the scope of my project.
+project. For example, if I wanted to have users be able to sign up, log in,
+change password, etc. those are all features I would like my application to
+have. They are *within* the scope of my project.
+
+## What is `MVP`? Why is it important?
+
+MVP, **Minimum Viable Product**, not Most Valuable Player, is a product that
+meets the minimum specifications or *requirements*. If I have a project idea
+that includes multiple features and accesses 3rd party APIs, the additional
+features would be *extra* for my project. The base level of the project would
+include the barest minimum in order to have a working application.
 
 ## Demo: Write an ERD and prioritize it
 
@@ -48,20 +59,20 @@ resource. So let's start there. The scope of my project would likely just start
 with books. I would make sure I could CRUD on books, then I would add an
 additional resource. How about authors?
 
-It's OK for you ERD to change!
+It's OK for your ERD to change!
 
 If I were building this out, I would start with just Book. ![Book](https://i.imgur.com/N1npKUD.png)
 
 Once I had CRUD working on book (using curl and perhaps a dummy client), I
 would move on to add authors.
 
-To add authors I would make sure that books belonged to authors and that there
-were no two authors the same, and add author's birthdays, and home town, and
+To add authors I would make sure that books belonged to authors and that no two
+authors were the same, and add author's birthdays, and home town, and
 favorite food, and--STOP! Add authors. That's IT.
 
 ![Author](https://i.imgur.com/lTnGitd.png)
 
-That wasn't so hard, no was it? Test CRUD on authors! Now what do we need to
+That wasn't so hard, now was it? Test CRUD on authors! Now what do we need to
 do? Well, we need to form some sort of relationship between authors and books.
 Right, and we know that authors can have many books... but wait--can't books
 have many authors!? Yep! But we aren't going to worry about that right now!
