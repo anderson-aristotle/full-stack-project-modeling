@@ -36,6 +36,14 @@ project. For example, if I wanted to have users be able to sign up, log in,
 change password, etc. those are all features I would like my application to
 have. They are *within* the scope of my project.
 
+## What is `MVP`? Why is it important?
+
+MVP, **Minimum Viable Product**, not Most Valuable Player, is a product that
+meets the minimum specifications or *requirements*. If I have a project idea
+that includes multiple features and accesses 3rd party APIs, the additional
+features would be *extra* for my project. The base level of the project would
+include the barest minimum in order to have a working application.
+
 ## Demo: Write an ERD and prioritize it
 
 Let's take our 'library-api' as an example. In this domain, our main resource
