@@ -7,7 +7,7 @@ the stars' idea, and build it in a methodical fashion that will keep you on
 track, while fixing *one* problem at a time.
 
 When you're starting out as a developer, it's often a struggle to take a
-grandiose idea and consolidate it into more managable pieces.
+grandiose idea and consolidate it into more manageable pieces.
 
 ## Prerequisites
 
