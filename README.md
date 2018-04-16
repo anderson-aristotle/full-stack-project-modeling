@@ -11,32 +11,32 @@ grandiose idea and consolidate it into more manageable pieces.
 
 ## Prerequisites
 
--   [full-stack-project-practice](https://git.generalassemb.ly/ga-wdi-boston/full-stack-project-practice)
+- [full-stack-project-practice](https://git.generalassemb.ly/ga-wdi-boston/full-stack-project-practice)
 
 ## Objectives
 
 By the end of this, developers should be able to:
 
--   Properly scope projects.
--   Break apart an ERD into a 'to-do' list.
--   Plan feature progress effectively.
--   Prioritize objectives/tasks and descope accordingly.
+- Properly scope projects.
+- Break apart an ERD into a 'to-do' list.
+- Plan feature progress effectively.
+- Prioritize objectives/tasks and descope accordingly.
 
 ## Preparation
 
-1.  Fork and clone this repository.
+1. Fork and clone this repository.
  [FAQ](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
-1.  Create a new branch, `training`, for your work.
-1.  Checkout to the `training` branch.
+1. Create a new branch, `training`, for your work.
+1. Checkout to the `training` branch.
 
-## What is `scope`? Why is it important?
+## What is `scope`? Why it is important
 
 Scope is typically a list of features or goals you have in mind for your
 project. For example, if I wanted to have users be able to sign up, log in,
 change password, etc. those are all features I would like my application to
 have. They are *within* the scope of my project.
 
-## What is `MVP`? Why is it important?
+## What is `MVP`? Why it is important
 
 MVP, **Minimum Viable Product**, not Most Valuable Player, is a product that
 meets the minimum specifications or *requirements*. If I have a project idea
@@ -87,7 +87,7 @@ What's next? Let's bring in that Author model, we want to be able to have a rela
 
 Boom. Now we have Authors. Let's pause for a second for some `testing best practices`!
 
-## CURL Scripts: But whyyyy?
+## CURL Scripts: The why
 
 CURL is your friend. It allows us as developers to *completely eliminate* the
 front end or client from the equation. After you've built out a feature with
@@ -97,7 +97,7 @@ Future You a favor and start writing them out, save, and commit ones that you
 know work. That way when you come back later and want to add a feature, it's
 easy to test your previous work!
 
-## Demo Continued...
+## Demo Continued
 
 Where were we? Because we have our overall ERD mapped out already, we have a
 roadmap for where our final destination is. At this point, our current relationship between Users and Books does not reflect how our ERD is set up. We also don't have a relationship yet between Books and Authors.
@@ -134,7 +134,7 @@ Think about the example we just ran through.
   - What priviliges would I allow?
   - How would I control user AND admin ownership?
 
-## Lab: Pitch Time!
+## Lab: Pitch Time
 
 You all should've completed the [full-stack-project-practice](https://git.generalassemb.ly/ga-wdi-boston/full-stack-project-practice) at this point. We'll go around the room, and have people present,
 or share their ideas and we'll descope and prioritize them together. Once we're
@@ -145,6 +145,6 @@ attack!
 
 ## [License](LICENSE)
 
-1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
-1.  All software code is licensed under GNU GPLv3. For commercial use or
+1. All content is licensed under a CC­BY­NC­SA 4.0 license.
+1. All software code is licensed under GNU GPLv3. For commercial use or
     alternative licensing, please contact legal@ga.co.
