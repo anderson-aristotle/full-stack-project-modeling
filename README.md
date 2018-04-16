@@ -54,43 +54,38 @@ books, but some books have multiple authors!? We also probably need to have
 need to be able to change their passwords, and what if we have multiple books,
 can multiple users take out different versions of the same boo--[ohh no I've gone crosseyed](https://i.imgur.com/a7Yyjg8.gif).
 
-Let's back it up, and take it one step at a time. Books. Books is our *main*
-resource. So let's start there. The scope of my project would likely just start
-with books. I would make sure I could CRUD on books, then I would add an
-additional resource. How about authors?
+Let's back it up, and take it one step at a time. Books. Books is our first
+custom resource. So let's start there. The scope of my project would likely
+just start with Books. I would make sure I could CRUD on Books, then I would
+add a relationship to Users. Once that worked I would think about adding some
+Authors.
 
-It's OK for your ERD to change!
+Remember, it's OK for your ERD to change!
 
-If I were building this out, I would start with just Book. ![Book](https://i.imgur.com/N1npKUD.png)
+If I were building this out, I would start with just Book. ![Book](https://i.imgur.com/bXtwCKO.png)
 
-Once I had CRUD working on book (using curl and perhaps a dummy client), I
-would move on to add authors.
+Once I had CRUD working on Book (using curl and perhaps a dummy client), I
+would move on to User ownership.
 
-To add authors I would make sure that books belonged to authors and that no two
-authors were the same, and add author's birthdays, and home town, and
-favorite food, and--STOP! Add authors. That's IT.
+To add User ownership I would first make sure that I can do all the
+authentication steps that I would expect to be able to. That means signing up
+and in and changing my password, as well as signing out.
 
-![Author](https://i.imgur.com/lTnGitd.png)
+![User](https://i.imgur.com/gGSAgI4.png)
 
-That wasn't so hard, now was it? Test CRUD on authors! Now what do we need to
-do? Well, we need to form some sort of relationship between authors and books.
-Right, and we know that authors can have many books... but wait--can't books
-have many authors!? Yep! But we aren't going to worry about that right now!
-See how liberating this can be?! Let's get it working, THEN we'll change it.
+Now we need to build a relationship between these resources so that a Book is
+owned by a User. With that in place, we don't want to have any Books remaining that are not owned by a User.
 
-![Relationship](https://i.imgur.com/vfWHyT6.png)
+![Relationship](https://i.imgur.com/U7o0eVS.png)
 
-Test the relationship. Make sure you can get all books that belong to an
-author, and that you can find an author that owns a book!
+Test the relationship. Make sure you can get all Books that belong to a
+User. We should also make sure that as another User, I can't delete the Books created by the first User.
 
-What's next? While we wanted to add a many-to-many relationship between authors
-and books, it's not as important as allowing users to interact with books. So,
-let's add our *User* model.
+What's next? Let's bring in that Author model, we want to be able to have a relationship between Books and the Author that wrote them, before we can have a relationship we need the appropriate resources.
 
-![User](https://i.imgur.com/sYjRXbz.png)
+![Author](https://i.imgur.com/QIevbE9.png)
 
-Boom. Now we have users. Let's test CRUD and pause for a second for some
-`testing best practices`!
+Boom. Now we have Authors. Let's pause for a second for some `testing best practices`!
 
 ## CURL Scripts: But whyyyy?
 
@@ -105,21 +100,19 @@ easy to test your previous work!
 ## Demo Continued...
 
 Where were we? Because we have our overall ERD mapped out already, we have a
-roadmap for where our final destination is. At this point, we want some sort of
-association between a User and a Book.
+roadmap for where our final destination is. At this point, our current relationship between Users and Books does not reflect how our ERD is set up. We also don't have a relationship yet between Books and Authors.
 
 It's time to choose your own adventure... Should you a) add a join table
-because you know you're going to want books and users to have a `many-to-many`
+because you know you're going to want Books and Authors to have a `many-to-many`
 relationship further down the road? OR b) build out your API methodically,
 making sure everything is working before jumping in the deep end? If you picked
 a) you're likely setting yourself up for headache.
 
-a) ![a](https://i.imgur.com/4CPYxty.png)
+a) ![a](https://i.imgur.com/AiQVpVd.png)
 
-b) ![b](https://i.imgur.com/XshAB3u.png)
+b) ![b](https://i.imgur.com/1b3hySk.png)
 
-Start with b. Once it's working properly, add the `Loan` resource, and create
-the join table.
+Start with b. Once it's working properly then you can add the join table.
 
 Remember: It's OK to change your ERD. It's ok to modify your database. There
 are things to remember when you do, but don't feel like you need to get your
@@ -129,12 +122,17 @@ to be ok with that inevitable change.
 
 ## Lab: Consider the previous example
 
-Think about the example we just ran through. What are the *must* haves? What
-are the nice to haves? Are there any resources we could do without? What would
-we sacrifice if we aren't developing features as fast as we'd hoped? What if
-all of a sudden, I wanted to add a Profile? How would our ERD change? What if
-I wanted there to be two types of users, admins, and non-admins? What
-priviliges would I allow? How would I control user AND admin ownership?
+Think about the example we just ran through.
+
+- What are the *must* haves?
+- What are the nice to haves?
+- Are there any resources we could do without?
+- What would we sacrifice if we aren't developing features as fast as we'd hoped?
+- What if I wanted Books to be able to be checked out by multiple Users?
+  - How would our ERD change?
+- What if I wanted there to be two types of users; admins and non-admins?
+  - What priviliges would I allow?
+  - How would I control user AND admin ownership?
 
 ## Lab: Pitch Time!
 
